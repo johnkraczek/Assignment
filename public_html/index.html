@@ -18,8 +18,6 @@
             }
             #center {
                 width: 100%;
-
-
             }
             #left {
                 width: 200px;          /* LC width */
@@ -40,11 +38,7 @@
                 margin:auto;
                 padding:25px;
             }
-            #lefttext {
-                padding-top:25px;
-                text-align:center;
-            }
-            #righttext {
+            .text {
                 padding-top:75px;
                 text-align:center;
             }
@@ -66,9 +60,12 @@
                 height:425px;
                 margin:0 auto;
             }
-
-
-
+            #footLeft{
+                float:left;                
+            }
+            #footRight{
+                float:right;
+            }
         </style>
         <script>
             function sendEmail() {
@@ -77,8 +74,6 @@
         </script>
     </head>
     <body>
-        <div id="header">
-        </div>
         <div id="container">
             <div id="center" class="column">
                 <div id="centertext">
@@ -129,82 +124,79 @@
                     <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=41.193754,-111.941916&amp;aq=&amp;sll=39.499761,-111.547028&amp;sspn=6.060393,10.865479&amp;t=h&amp;ie=UTF8&amp;ll=41.193704,-111.942288&amp;spn=0.001998,0.00228&amp;z=18" style="color:#0000FF;text-align:left">Click Here to get Driving Directions!</a>
                 </div>
                 <div  id="iframe">
-                    <iframe width="425" height="425" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=41.193754,-111.941916&amp;aq=&amp;sll=39.499761,-111.547028&amp;sspn=6.060393,10.865479&amp;t=h&amp;ie=UTF8&amp;ll=41.193704,-111.942288&amp;spn=0.001998,0.00228&amp;z=18&amp;output=embed"></iframe><br />
+                    <iframe width="425" height="425" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=41.193754,-111.941916&amp;aq=&amp;sll=39.499761,-111.547028&amp;sspn=6.060393,10.865479&amp;t=h&amp;ie=UTF8&amp;ll=41.193704,-111.942288&amp;spn=0.001998,0.00228&amp;z=18&amp;output=embed"></iframe><br />            
                 </div>
+            </div>
+            <div id="left" class="column">
+                <img  id="image" src="http://documents.weber.edu/styleguide/images/umsigcen.jpg" alt="Weber State Logo">
+
+                <div class="text">	  
+                    <p>
+                        <b>
+                            Mon, June 11th -
+                            <br>
+                            Friday, June 15th
+                        </b>
+                        <br />
+                        9:00 a.m. - 3:30 p.m
+                        <br />
+                        Weber State University
+                        <br />
+                        TE Building, 1st Floor,<br> Room 103C
+                    </p>
+                    <p>
+                        <b>Computer Science </b><br>
+                        2401 University Circle <br>
+                        Ogden, UT 84408-2401 </p>
+                    <p>
+                        For more information contact
+                        <br>Phone: 801-626-7929
+                        <br>Fax:  801-626-7937<br> 
+                        you can also view the
+                        <a href="http://www.weber.edu/wsuimages/CS/Resources/SummerGamesFlier2012.pdf">
+                            Flyer here
+                        </a>
+                    </p>
+                    <p>
+                        If you would like to make a payment online you can do that <a href="https://secure.touchnet.com/C20249_ustores/web/product_detail.jsp?PRODUCTID=334"> Here 
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div id="right" class="column">
+                <div class="text">
+                    <p>To register, please fill out the following form <br>Please Complete by May 31st</p>
+
+                    <div id="form">
+                        <form action="#" method="post" enctype="text/plain">
+                            Name: <input type="text"><br><br>
+                            High School: <input type="text"><br>
+                            <hr><br>
+                            <input type="radio" name="role" value="faculty">Faculty<br><br>
+                            <input type="radio" name="role" value="Student">Student<br><br><hr>
+                            Address<input type="text"><br><br>
+                            Phone<input type="text"><br><br>
+                            Email Address<input id="name" type="text"><br><br>
+                            Grade <select>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select><br><br>
+                            Why do you want to participate?
+                            <textarea rows="10"></textarea>
+                            <input id="send" type="submit" onclick="sendEmail();" value="Sign Me Up!">
 
 
+                        </form>
+
+                    </div> 
+                </div>
             </div>
         </div>
-
-        <div id="left" class="column">   
-            <img  id="image" src="http://documents.weber.edu/styleguide/images/umsigcen.jpg" alt="Weber State Logo">
-
-            <div id="lefttext">	  
-                <p>
-                    <b>
-                        Mon, June 11th -
-                        <br>
-                        Friday, June 15th
-                    </b>
-                    <br />
-                    9:00 a.m. - 3:30 p.m
-                    <br />
-                    Weber State University
-                    <br />
-                    TE Building, 1st Floor,<br> Room 103C
-                </p>
-                <p>
-                    <b>Computer Science </b><br>
-                    2401 University Circle <br>
-                    Ogden, UT 84408-2401 </p>
-                <p>
-                    For more information contact
-                    <br>Phone: 801-626-7929
-                    <br>Fax:  801-626-7937<br> 
-                    you can also view the
-                    <a href="http://www.weber.edu/wsuimages/CS/Resources/SummerGamesFlier2012.pdf">
-                        Flyer here
-                    </a>
-                </p>
-                <p>
-                    If you would like to make a payment online you can do that <a href="https://secure.touchnet.com/C20249_ustores/web/product_detail.jsp?PRODUCTID=334"> Here 
-                    </a>
-                </p>
+            <div id="footer">
+                <span id="footLeft">Developed by: John Kraczek </span>
+                <span id="footRight">Copyright 2012 | WSU Summer Games 12, Gaming Camp | All Rights Reserved. </span>
             </div>
-        </div>
-        <div id="right" class="column">
-            <div id=righttext>
-                <p>To register, please fill out the following form <br>Please Complete by May 31st</p>
-            </div>
-            <div id="form">
-                <form action="#" method="post" enctype="text/plain">
-                    Name: <input type="text"><br><br>
-                    High School: <input type="text"><br>
-                    <hr><br>
-                    <input type="radio" name="role" value="faculty">Faculty<br><br>
-                    <input type="radio" name="role" value="Student">Student<br><br><hr>
-                    Address<input type="text"><br><br>
-                    Phone<input type="text"><br><br>
-                    Email Address<input id="name" type="text"><br><br>
-                    Grade <select>
-                        <option value="09">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select><br><br>
-                    Why do you want to participate?
-                    <textarea rows="10"></textarea>
-                    <input id="send" type="submit" onclick="sendEmail();" value="Sign Me Up!">
-
-
-                </form>
-
-            </div>
-        </div>
-
-        <div id="footer">
-            <span class="lefttext">Developed by: John Kraczek </span>
-            <span class="righttext">Copyright 2012 | WSU Summer Games 12, Gaming Camp | All Rights Reserved. </span>
-        </div>
     </body>
 </html>
