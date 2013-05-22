@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WSU Summer Games 12</title>
+        <!-- I got my 3 column layout from http://alistapart.com/article/holygrail -->
+        <style type="text/css">
+            body {
+                min-width: 600px;      /* 2x LC width + RC width */
+            }
+            #container {
+                padding-left: 200px;   /* LC width */
+                padding-right: 300px;  /* RC width */
+                min-width: 500px;
+            }
+            #container .column {
+                position: relative;
+                float: left;
+            }
+            #center {
+                width: 100%;
+
+
+            }
+            #left {
+                width: 200px;          /* LC width */
+                right: 200px;          /* LC width */
+                margin-left: -100%;
+            }
+            #right {
+                width: 300px;          /* RC width */
+                margin-right: -300px;  /* RC width */
+            }
+            #footer {
+                padding-top:50px;
+                clear: both;
+            }
+            #centertext {
+                text-align:center;
+                max-width:700px;
+                margin:auto;
+                padding:25px;
+            }
+            #lefttext {
+                padding-top:25px;
+                text-align:center;
+            }
+            #righttext {
+                padding-top:75px;
+                text-align:center;
+            }
+            input, select{
+                float:right;
+            }
+            textarea {
+                width:300px;
+                margin:auto;
+            }
+            #send {
+                margin-right: 100px;
+            }
+            #image, #additional {
+                padding-top:75px;
+            }
+            #iframe {
+                width:425px;
+                height:425px;
+                margin:0 auto;
+            }
+
+
+
+        </style>
+        <script>
+            function sendEmail() {
+                alert("this would be a server script to verify data then send an email or record the data.");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header">
+        </div>
+        <div id="container">
+            <div id="center" class="column">
+                <div id="centertext">
+                    <h1>
+                        WSU Summer Games 12
+                    </h1>
+                    <p>
+                        Presented by Weber State University's Computer Science department
+                    </p>
+                    <p>
+                        <b>
+                            2D Video Gaming Camp using Game Maker
+                        </b>
+                    </p>
+                    <p>
+                        <b>
+                            Seating Limited To 25 Participants - First Come, First Served
+                        </b>
+                    </p>
+                    <p>
+                        The Computer Science department at Weber State University is hosting a summer educational experience
+                        for high school students in grades 9 -12 and high school teachers. Enrollment is limited so please enroll ASAP.
+                    </p>
+                    <p>
+                        <b>
+                            Registration is only $30 for the session and must be received by May 31st
+                        </b>
+                        <br>
+                        Attendees will receive a t-shirt, book/software, lunches, and other goodies
+                    </p>
+                    <p>
+                        The week long training camp will have daily presentations and hands-on exercises that will be given by
+                        faculty and members from industry presenting on topics such as pursuing a career in video game development, getting the
+                        right education to get a job, how to create video games, XNA, and more...
+                    </p>
+                    <p>
+                        The workshops will focus on the use of a game development tool to create video games. Attendees will
+                        receive hands-on instruction on how to create video games. At the end of the week, the games created by the participants
+                        will be judged with winners receiving prizes.
+                    </p>
+                    <p>
+                        <b>
+                            Don't delay! We hope you take advantage of this opportunity to learn more about the video gaming industry!
+                        </b>
+                    </p>
+                    <h2 id="additional"> Additional Information </h2>
+                    <p> Here is some additional information. </p>
+                    <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=41.193754,-111.941916&amp;aq=&amp;sll=39.499761,-111.547028&amp;sspn=6.060393,10.865479&amp;t=h&amp;ie=UTF8&amp;ll=41.193704,-111.942288&amp;spn=0.001998,0.00228&amp;z=18" style="color:#0000FF;text-align:left">Click Here to get Driving Directions!</a>
+                </div>
+                <div  id="iframe">
+                    <iframe width="425" height="425" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=41.193754,-111.941916&amp;aq=&amp;sll=39.499761,-111.547028&amp;sspn=6.060393,10.865479&amp;t=h&amp;ie=UTF8&amp;ll=41.193704,-111.942288&amp;spn=0.001998,0.00228&amp;z=18&amp;output=embed"></iframe><br />
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="left" class="column">   
+            <img  id="image" src="http://documents.weber.edu/styleguide/images/umsigcen.jpg" alt="Weber State Logo">
+
+            <div id="lefttext">	  
+                <p>
+                    <b>
+                        Mon, June 11th -
+                        <br>
+                        Friday, June 15th
+                    </b>
+                    <br />
+                    9:00 a.m. - 3:30 p.m
+                    <br />
+                    Weber State University
+                    <br />
+                    TE Building, 1st Floor,<br> Room 103C
+                </p>
+                <p>
+                    <b>Computer Science </b><br>
+                    2401 University Circle <br>
+                    Ogden, UT 84408-2401 </p>
+                <p>
+                    For more information contact
+                    <br>Phone: 801-626-7929
+                    <br>Fax:  801-626-7937<br> 
+                    you can also view the
+                    <a href="http://www.weber.edu/wsuimages/CS/Resources/SummerGamesFlier2012.pdf">
+                        Flyer here
+                    </a>
+                </p>
+                <p>
+                    If you would like to make a payment online you can do that <a href="https://secure.touchnet.com/C20249_ustores/web/product_detail.jsp?PRODUCTID=334"> Here 
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div id="right" class="column">
+            <div id=righttext>
+                <p>To register, please fill out the following form <br>Please Complete by May 31st</p>
+            </div>
+            <div id="form">
+                <form action="#" method="post" enctype="text/plain">
+                    Name: <input type="text"><br><br>
+                    High School: <input type="text"><br>
+                    <hr><br>
+                    <input type="radio" name="role" value="faculty">Faculty<br><br>
+                    <input type="radio" name="role" value="Student">Student<br><br><hr>
+                    Address<input type="text"><br><br>
+                    Phone<input type="text"><br><br>
+                    Email Address<input id="name" type="text"><br><br>
+                    Grade <select>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select><br><br>
+                    Why do you want to participate?
+                    <textarea rows="10"></textarea>
+                    <input id="send" type="submit" onclick="sendEmail();" value="Sign Me Up!">
+
+
+                </form>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <span class="lefttext">Developed by: John Kraczek </span>
+            <span class="righttext">Copyright 2012 | WSU Summer Games 12, Gaming Camp | All Rights Reserved. </span>
+        </div>
+    </body>
+</html>
